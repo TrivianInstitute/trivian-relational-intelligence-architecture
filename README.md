@@ -28,7 +28,7 @@ Governance is one layer of the architecture. Relationship is the underlying obje
 
 ## Start Here
 
-- [Read the two-page TRIA Research Brief](briefs/TRIA_Research_Brief.pdf)
+- [Read the two-page TRIA Research Brief](https://github.com/TrivianInstitute/trivian-relational-intelligence-architecture/blob/main/briefs/TRIA_Research_Brief_August_2026.pdf)
 - Review the [research papers and DOI records](#research-basis)
 - Explore the [component repositories](#architecture)
 - See the [research and falsification agenda](#research-and-falsification-agenda)
@@ -188,7 +188,7 @@ trivian-relational-intelligence-architecture/
 ├── README.md
 ├── briefs/
 │   ├── README.md
-│   └── TRIA_Research_Brief.pdf
+│   └── TRIA_Research_Brief_August_2026.pdf
 ├── architecture/                 # Architecture guides and system maps
 └── LICENSE.md                    # Documentation and research-material terms
 ```
@@ -253,6 +253,7 @@ Please cite individual papers or software repositories separately when relying o
 ## Authorship and Stewardship
 
 **Primary researcher and architecture author:** Sarasha Elion
+
 **Research steward and publisher:** Trivian Institute, a 501(c)(3) nonprofit organization
 
 Copyright © 2026 Sarasha Elion. Published by Trivian Institute.
