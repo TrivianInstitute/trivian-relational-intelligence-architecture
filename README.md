@@ -28,6 +28,7 @@ Governance is one layer of the architecture. Relationship is the underlying obje
 
 ## Start Here
 
+- [Install and verify the four executable TRIA components](START_HERE.md)
 - [Read the two-page TRIA Research Brief](https://github.com/TrivianInstitute/trivian-relational-intelligence-architecture/blob/main/briefs/TRIA_Research_Brief_August_2026.pdf)
 - Review the [research papers and DOI records](#research-basis)
 - Explore the [component repositories](#architecture)
