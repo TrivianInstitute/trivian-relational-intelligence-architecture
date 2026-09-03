@@ -251,6 +251,8 @@ BibTeX:
 
 Please cite individual papers or software repositories separately when relying on their specific theories, specifications, implementations, or tests.
 
+Machine-readable citation metadata is available in [`CITATION.cff`](CITATION.cff).
+
 ## Authorship and Stewardship
 
 **Primary researcher and architecture author:** Sarasha Elion
