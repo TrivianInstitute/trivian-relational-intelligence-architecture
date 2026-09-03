@@ -1,51 +1,31 @@
-# Start Here: Install and Verify TRIA
+# Start Here: Deploy and Verify TRIA
 
-This guide gives researchers and developers a reproducible way to install the four executable TRIA components in one Python environment and verify that they can be imported together.
+This guide gives researchers and developers the shortest reproducible path from the Trivian Institute GitHub organization to a working TRIA installation.
 
-## What this proves
+## Which repository should I use?
 
-Completing this guide verifies that:
+If you want to **implement or integrate TRIA in software**, start with [`tria-sdk`](https://github.com/TrivianInstitute/tria-sdk).
 
-- each component installs as a Python package;
-- the current public interfaces can be imported together;
-- each repository's automated test suite can run locally; and
-- your environment is ready for component-level experimentation.
+If you want to **study, reproduce, falsify, or extend the underlying research architecture**, use the component repositories listed below.
 
-It does **not** establish that TRIA's theoretical claims have been empirically validated, or that the four components already form a production-ready end-to-end runtime. Independent falsification, cross-component behavioral tests, and live-model integrations remain active research and engineering work.
+The SDK is the canonical developer-facing implementation surface. The research repositories remain the canonical sources for the theories, measurements, governance mechanisms, reference implementations, and experimental layers from which the SDK was derived.
 
-## Components
+## Fastest path: install TRIA SDK
 
-| Layer | Repository | Current role |
-|---|---|---|
-| 1 | [Syzygy Rosetta](https://github.com/TrivianInstitute/Syzygy-rosetta) | Interaction-boundary governance and invariants |
-| 2 | [Coheronmetry](https://github.com/TrivianInstitute/Coheronmetry) | Relational state, drift, repair, and sovereignty measurement |
-| 3 | [Orthogonal Signal](https://github.com/TrivianInstitute/Orthogonal-signal) | Novelty, constraint-origin, and anti-convergence primitives |
-| 4 | [Trivian Resonance Lattice](https://github.com/TrivianInstitute/Trivian-resonance-lattice) | Network-scale propagation, entrainment, repair, and dissolution |
-
-The [Trivian AI Resonance Key](https://github.com/TrivianInstitute/Trivian-ai-resonance-key) is the orientation layer. Read it first when you need the conceptual and machine-readable framing, but it is not installed as a Python package.
-
-## Requirements
+Requirements:
 
 - Git
-- Python 3.10 or newer
+- Python 3.11 or newer
 - A terminal or command prompt
 
-The repositories are currently tested on Python 3.10 and 3.12.
-
-## 1. Create a workspace
+Clone the SDK:
 
 ```bash
-mkdir tria-workspace
-cd tria-workspace
-
-git clone https://github.com/TrivianInstitute/trivian-relational-intelligence-architecture.git
-git clone https://github.com/TrivianInstitute/Syzygy-rosetta.git
-git clone https://github.com/TrivianInstitute/Coheronmetry.git
-git clone https://github.com/TrivianInstitute/Orthogonal-signal.git
-git clone https://github.com/TrivianInstitute/Trivian-resonance-lattice.git
+git clone https://github.com/TrivianInstitute/tria-sdk.git
+cd tria-sdk
 ```
 
-## 2. Create and activate an isolated environment
+Create an isolated environment.
 
 macOS or Linux:
 
@@ -61,38 +41,70 @@ py -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
 
-Your terminal should now show `(.venv)` at the beginning of the prompt.
-
-## 3. Install the four components
-
-From the `tria-workspace` directory:
+Install the package and development tools:
 
 ```bash
 python -m pip install --upgrade pip
-python -m pip install \
-  -e ./Syzygy-rosetta \
-  -e ./Coheronmetry \
-  -e ./Orthogonal-signal \
-  -e ./Trivian-resonance-lattice
+python -m pip install -e '.[dev]'
 ```
 
-The `-e` flag creates an editable installation. If you modify a cloned repository, Python uses that working copy without requiring a new installation.
-
-## 4. Verify the shared environment
+Verify the installation:
 
 ```bash
-python trivian-relational-intelligence-architecture/scripts/verify_installation.py
+python -m pytest -q
 ```
 
-A successful result ends with:
+Then create a relationship:
 
-```text
-TRIA installation verified: 4/4 components import successfully.
+```python
+from tria import Tria
+
+tria = Tria()
+relationship = tria.create_relationship(["human:user", "agent:demo"])
+print(relationship.state)
 ```
 
-## 5. Run every component test suite
+A successful installation means the current SDK package imports and its encoded alpha behavior passes the repository test suite. It does not establish empirical validation, legitimate consent, legal compliance, or production certification.
 
-Install the development dependencies:
+## Connecting TRIA to an AI system
+
+TRIA Core does not require a model. The SDK includes a provider-neutral Runtime boundary plus thin OpenAI Responses-style and Anthropic Messages-style translators.
+
+TRIA intentionally does **not** own API credentials, provider SDK clients, network transport, retries, or model execution. Your application supplies those pieces. The SDK governs the invocation, authorized context, lifecycle state, consent, capability checks, and audit trail before a caller-owned executor is invoked.
+
+See the [`tria-sdk` README](https://github.com/TrivianInstitute/tria-sdk#governed-execution) and its `examples/` directory for the current integration path.
+
+## Research architecture and component repositories
+
+The executable research components remain independently installable and testable:
+
+| Layer | Repository | Current role |
+|---|---|---|
+| Orientation | [Trivian AI Resonance Key](https://github.com/TrivianInstitute/Trivian-ai-resonance-key) | Machine-readable orientation and relational invariants |
+| Governance | [Syzygy Rosetta](https://github.com/TrivianInstitute/Syzygy-rosetta) | Reflective governance and intervention research |
+| Measurement | [Coheronmetry](https://github.com/TrivianInstitute/Coheronmetry) | Relational state, drift, repair, and sovereignty measurement |
+| Anti-convergence | [Orthogonal Signal](https://github.com/TrivianInstitute/Orthogonal-signal) | Novelty, constraint-origin, and difference-preservation research |
+| Network | [Trivian Resonance Lattice](https://github.com/TrivianInstitute/Trivian-resonance-lattice) | Network propagation, entrainment, repair, and dissolution |
+| Continuity | [TRIA Diachronic Sovereignty](https://github.com/TrivianInstitute/tria-diachronic-sovereignty) | Persistent relational state, consent, provenance, and sovereignty through time |
+| SDK | [TRIA SDK](https://github.com/TrivianInstitute/tria-sdk) | Canonical developer-facing governance kernel and execution boundary |
+
+You do **not** need to clone every research repository in order to use the SDK.
+
+## Optional: reproduce the component implementations
+
+Researchers who want to inspect the pre-SDK reference implementations can create a shared workspace:
+
+```bash
+mkdir tria-research-workspace
+cd tria-research-workspace
+
+git clone https://github.com/TrivianInstitute/Syzygy-rosetta.git
+git clone https://github.com/TrivianInstitute/Coheronmetry.git
+git clone https://github.com/TrivianInstitute/Orthogonal-signal.git
+git clone https://github.com/TrivianInstitute/Trivian-resonance-lattice.git
+```
+
+Create and activate a virtual environment, then install:
 
 ```bash
 python -m pip install \
@@ -102,51 +114,45 @@ python -m pip install \
   -e './Trivian-resonance-lattice[dev]'
 ```
 
-Then run:
+Run each repository's tests from that repository. These suites validate their own encoded reference behavior; they are no longer the required installation route for application developers.
 
-```bash
-(cd Syzygy-rosetta && python -m pytest -q)
-(cd Coheronmetry && python -m pytest -q)
-(cd Orthogonal-signal && python -m pytest -q)
-(cd Trivian-resonance-lattice && python -m pytest -q)
-```
+## What is deployable today?
 
-At the current baseline, the repositories contain 5, 34, 150, and 68 tests respectively. GitHub Actions also runs these suites whenever their repositories change.
+`tria-sdk` v0.1 alpha is the current deployable software artifact. It provides:
 
-## 6. Run the examples
+- immutable relational events and deterministic state reduction;
+- SQLite persistence and replay;
+- scoped consent and governed capabilities;
+- policy, delegation, lifecycle, and provenance controls;
+- epistemic claims and preserved disagreement;
+- governed context and invocation planning;
+- provider-neutral execution boundaries;
+- portable replay bundles and compatibility gates; and
+- conformance fixtures and release-readiness tests.
 
-```bash
-python Syzygy-rosetta/examples/basic_usage.py
-python Coheronmetry/examples/two_agent_coherence.py
-python Coheronmetry/examples/syzygy_ensemble.py
-python Trivian-resonance-lattice/examples/demo.py
-```
-
-The Resonance Lattice demo is interactive. Use `Ctrl+C` to leave it.
+"Deployable" here means it can be cloned, installed, imported, tested, and integrated into an application. It does **not** mean production-certified, empirically validated, or appropriate for consequential deployment without independent testing and application-specific safeguards.
 
 ## Choose an entry point
 
-- **Understand the full research architecture:** continue with the [TRIA README](README.md).
-- **Orient a human or machine reader:** begin with the [Resonance Key](https://github.com/TrivianInstitute/Trivian-ai-resonance-key).
-- **Instrument relational state:** begin with Coheronmetry.
-- **Study difference and anti-convergence:** begin with Orthogonal Signal.
-- **Explore network-scale coordination:** begin with the Resonance Lattice.
-- **Evaluate interaction-boundary governance:** begin with Syzygy Rosetta.
-
-## Current maturity
-
-TRIA is an experimental research architecture. Its component implementations are installable and tested, but the present test counts demonstrate software behavior against their specifications—not empirical proof that the proposed relational variables measure real-world human–AI dynamics.
-
-The next engineering milestone is a canonical end-to-end integration harness linking all four executable layers around a shared interaction trace.
+- **Implement TRIA in software:** [`tria-sdk`](https://github.com/TrivianInstitute/tria-sdk)
+- **Understand the complete architecture:** continue with the [TRIA README](README.md)
+- **Orient a human or machine reader:** [Trivian AI Resonance Key](https://github.com/TrivianInstitute/Trivian-ai-resonance-key)
+- **Study interaction governance:** [Syzygy Rosetta](https://github.com/TrivianInstitute/Syzygy-rosetta)
+- **Study relational measurement:** [Coheronmetry](https://github.com/TrivianInstitute/Coheronmetry)
+- **Study difference and anti-convergence:** [Orthogonal Signal](https://github.com/TrivianInstitute/Orthogonal-signal)
+- **Study network-scale propagation:** [Trivian Resonance Lattice](https://github.com/TrivianInstitute/Trivian-resonance-lattice)
+- **Study persistence and sovereignty through time:** [TRIA Diachronic Sovereignty](https://github.com/TrivianInstitute/tria-diachronic-sovereignty)
 
 ## Licensing and commercial use
 
-Review the license file in each component repository before redistribution, deployment, or adaptation. Repository summaries are not substitutes for the governing license text.
+The `tria-sdk` is source-available for noncommercial use under the PolyForm Noncommercial License 1.0.0. Commercial use requires a separate written license from Trivian Institute.
 
-For commercial licensing inquiries, contact [connect@trivianinstitute.org](mailto:connect@trivianinstitute.org).
+Research repositories and publications may carry their own governing license files. Always review the license in the specific repository or artifact you are using.
+
+Commercial licensing inquiries: [connect@trivianinstitute.org](mailto:connect@trivianinstitute.org).
 
 ## Help, research, and contributions
 
 Questions, reproducibility reports, falsification attempts, and implementation findings may be submitted through the relevant repository's GitHub Issues page or sent to [connect@trivianinstitute.org](mailto:connect@trivianinstitute.org).
 
-When reporting a problem, include your operating system, Python version, installation command, complete error message, and the repository commit you tested.
+When reporting an implementation problem, include your operating system, Python version, installation command, complete error message, and repository commit tested.
