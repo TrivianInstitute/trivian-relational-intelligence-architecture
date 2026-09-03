@@ -28,11 +28,14 @@ Governance is one layer of the architecture. Relationship is the underlying obje
 
 ## Start Here
 
-- [Install and verify the four executable TRIA components](START_HERE.md)
+- **Implement or integrate TRIA:** start with the [`tria-sdk`](https://github.com/TrivianInstitute/tria-sdk).
+- **Install, verify, or reproduce the research stack:** follow [`START_HERE.md`](START_HERE.md).
 - [Read the two-page TRIA Research Brief](https://github.com/TrivianInstitute/trivian-relational-intelligence-architecture/blob/main/briefs/TRIA_Research_Brief_August_2026.pdf)
 - Review the [research papers and DOI records](#research-basis)
 - Explore the [component repositories](#architecture)
 - See the [research and falsification agenda](#research-and-falsification-agenda)
+
+The SDK is now the canonical developer-facing implementation surface. The individual component repositories remain the canonical research and reference-implementation sources and do not all need to be installed in order to use TRIA in an application.
 
 ## The Problem
 
@@ -144,6 +147,7 @@ These categories should not be collapsed. Internal tests demonstrate implementat
 |Coheronmetry              |Reference implementation with early internal validation             |Live human–AI and multi-agent calibration|
 |Orthogonal Signal         |Executable reference implementation with unit and simulation support|Real multi-agent testing                 |
 |Trivian Resonance Lattice |Implemented modules                                                 |Integrated network experiments           |
+|TRIA SDK                  |Implementation-complete experimental alpha                           |Independent integrations and deployment testing|
 
 The repository and component documentation should be treated as a developing research record. Claims, implementation status, and test coverage may change as the architecture is revised.
 
@@ -187,6 +191,7 @@ The architecture overview is a synthesis of these underlying papers, repositorie
 ```text
 trivian-relational-intelligence-architecture/
 ├── README.md
+├── START_HERE.md                 # SDK-first deployment and research reproduction guide
 ├── briefs/
 │   ├── README.md
 │   └── TRIA_Research_Brief_August_2026.pdf
@@ -194,7 +199,7 @@ trivian-relational-intelligence-architecture/
 └── LICENSE.md                    # Documentation and research-material terms
 ```
 
-This repository is the umbrella entry point for TRIA. Formal component specifications, code, tests, and implementation instructions remain in their respective repositories.
+This repository is the umbrella research entry point for TRIA. The [`tria-sdk`](https://github.com/TrivianInstitute/tria-sdk) is the canonical implementation entry point. Formal component specifications, research code, tests, and reference implementations remain in their respective repositories.
 
 ## Intended Research Contexts
 
@@ -297,6 +302,8 @@ layers:
   - Coheronmetry
   - Orthogonal Signal
   - Trivian Resonance Lattice
+implementation:
+  canonical_sdk: https://github.com/TrivianInstitute/tria-sdk
 research_posture: falsifiable_and_open_to_revision
 validation_status: independent_external_validation_required
 contact: connect@trivianinstitute.org
