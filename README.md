@@ -224,6 +224,14 @@ TRIA may be relevant to:
 
 Potential application domains include organizational decision support, financial review, healthcare coordination, education, companion AI, and autonomous-agent networks. These are proposed research and pilot contexts, not validated deployment claims.
 
+## Fund the Public Infrastructure
+
+Help maintain public relational-governance infrastructure for increasingly persistent AI systems.
+
+Sponsorships support documentation, testing, reproducible evaluations, compatibility work, security hardening, reference implementations, issue stewardship, and independent validation through Trivian Institute. Sponsorship does not convey governance authority, influence research findings, transfer intellectual property, grant commercial-use rights, or imply endorsement.
+
+[**Sponsor Trivian Institute through GitHub Sponsors**](https://github.com/sponsors/TrivianInstitute) · [Review the funding policy and tiers](https://github.com/TrivianInstitute/.github/blob/main/FUNDING.md)
+
 ## Collaboration
 
 Trivian Institute welcomes:
