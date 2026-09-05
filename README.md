@@ -134,6 +134,9 @@ TRIA is designed as an additive layer that can instrument existing model, agent,
 
 ## Current Evidence Status
 
+The [pinned cross-stack verification harness](verification/README.md) provides
+the runnable reproduction baseline, exact component revisions, and coverage limits.
+
 TRIA distinguishes among three evidence classes:
 
 - **Proposed**: theoretical architecture or hypotheses requiring empirical evaluation.
