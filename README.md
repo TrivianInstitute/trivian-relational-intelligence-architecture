@@ -72,34 +72,36 @@ These are research propositions, not established outcomes.
 
 ## Architecture
 
-TRIA begins with a proposed structural foundation and extends through four operational layers.
+TRIA begins with a proposed structural foundation and extends through five operational layers.
 
 |Position  |Component                          |Architectural role                                                                                                         |Canonical resources                                                                                                              |
 |----------|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-|Foundation|**Relational Field Constants**     |Defines Reciprocity, Embodiment, Non-Domination, and Emergence as proposed structural conditions.                          |[DOI](https://doi.org/10.5281/zenodo.21095206) · [AI Resonance Key](https://github.com/TrivianInstitute/trivian-ai-resonance-key)|
-|Layer 1   |**Syzygy Rosetta**                 |Applies relational governance at the interaction boundary through machine-readable invariants and intervention states.     |[Repository](https://github.com/TrivianInstitute/Syzygy-rosetta) · [DOI](https://doi.org/10.5281/zenodo.21088231)                |
+|Foundation|**Relational Field Constants**     |Defines three constitutive conditions—Reciprocity, Embodiment, and Non-Domination—with Emergence observed downstream.       |[DOI](https://doi.org/10.5281/zenodo.21095206) · [AI Resonance Key](https://github.com/TrivianInstitute/trivian-ai-resonance-key)|
+|Layer 1   |**Syzygy Rosetta**                 |Preserves the Twelve Invariants as a covenant/governance layer and publishes the executable Field Constant topology.        |[Repository](https://github.com/TrivianInstitute/Syzygy-rosetta) · [DOI](https://doi.org/10.5281/zenodo.21088231)                |
 |Layer 2   |**Coheronmetry**                   |Represents relational state and instruments coherence, drift, repair, and sovereignty across interacting participants.     |[Repository](https://github.com/TrivianInstitute/coheronmetry) · [DOI](https://doi.org/10.5281/zenodo.21117753)                  |
 |Layer 3   |**Orthogonal Signal**              |Detects and preserves meaningful difference and constraint diversity to resist closed-loop convergence and crystallization.|[Repository](https://github.com/TrivianInstitute/orthogonal-signal) · [DOI](https://doi.org/10.5281/zenodo.21119629)             |
 |Layer 4   |**Trivian Resonance Lattice (TRL)**|Extends relational state, signal propagation, dissonance, entrainment, repair, and dissolution across networks.            |[Repository](https://github.com/TrivianInstitute/trivian-resonance-lattice) · [DOI](https://doi.org/10.5281/zenodo.21153895)     |
+|Layer 5   |**TRIA Diachronic Sovereignty**    |Governs continuity, memory, epistemic sovereignty, and relational state across time.                                        |[Repository](https://github.com/TrivianInstitute/tria-diachronic-sovereignty)                                                   |
 
 ### Structural Foundation
 
-The Relational Field Constants supply the architecture's current structural hypothesis:
+The Relational Field Constants supply the architecture's current structural hypothesis. The constants retain equal normative standing, but they do not perform identical computational roles:
 
-|Constant          |Proposed function                                                   |
-|------------------|--------------------------------------------------------------------|
-|**Reciprocity**   |Generative exchange among participants                              |
-|**Embodiment**    |Grounding in material, lived, ecological, or operational constraint |
-|**Non-Domination**|Preservation of agency, contestability, dissent, and meaningful exit|
-|**Emergence**     |Observable output that neither participant produces alone           |
+|Constant          |Computational role|Proposed function                                                   |
+|------------------|------------------|--------------------------------------------------------------------|
+|**Reciprocity**   |Constitutive      |Generative exchange among participants                              |
+|**Embodiment**    |Constitutive      |Grounding in material, lived, ecological, or operational constraint |
+|**Non-Domination**|Constitutive      |Preservation of agency, contestability, dissent, and meaningful exit|
+|**Emergence**     |Downstream        |Observable output that neither participant produces alone           |
 
-The current candidate aggregation model is:
+Rosetta 2.0 and the conforming reference implementations encode:
 
 ```text
 RCD = R × E_d × N
+E_qualified = RCD × E_raw
 ```
 
-Reciprocal Constraint Density is a proposed non-compensatory model, not an established law. Product, minimum, geometric-mean, harmonic-mean, additive, and other formulations remain candidates for empirical comparison.
+The product makes the constitutive relation non-compensatory: strength in one condition cannot conceal collapse in another. Emergence is measured downstream rather than averaged into RCD as a peer input. This topology is canonical for implementation conformance, but it remains a falsifiable research hypothesis rather than an established empirical law. Alternative operators remain valid experimental comparators; adopting one as the reference model would require an explicit versioned revision.
 
 ### Relational Lifecycle
 
@@ -143,11 +145,14 @@ These categories should not be collapsed. Internal tests demonstrate implementat
 |Component                 |Current posture                                                     |Next validation need                     |
 |--------------------------|---------------------------------------------------------------------|-------------------------------------------|
 |Relational Field Constants|Proposed structural theory with a defined stress-test direction     |Independent empirical testing            |
-|Syzygy Rosetta            |Implemented governance layer with internal evaluation               |Independent deployment studies           |
+|Syzygy Rosetta            |Versioned covenant, governance, and executable topology contract    |Independent deployment studies           |
 |Coheronmetry              |Reference implementation with early internal validation             |Live human–AI and multi-agent calibration|
 |Orthogonal Signal         |Executable reference implementation with unit and simulation support|Real multi-agent testing                 |
 |Trivian Resonance Lattice |Implemented modules                                                 |Integrated network experiments           |
+|TRIA Diachronic Sovereignty|Executable snapshot schema and semantic validation                  |Longitudinal continuity studies          |
 |TRIA SDK                  |Implementation-complete experimental alpha                           |Independent integrations and deployment testing|
+
+On 2026-09-05, the five component repositories passed 311 repository tests plus 10,000 deterministic randomized cross-stack vectors and one legacy additive counterexample. These results establish agreement with the Rosetta 2.0 contract and exercise zero-collapse, non-compensation, monotonicity, bounded qualified emergence, and rejection of inconsistent diachronic snapshots. They do not establish construct validity, threshold validity, causal validity, or real-world benefit.
 
 The repository and component documentation should be treated as a developing research record. Claims, implementation status, and test coverage may change as the architecture is revised.
 
@@ -292,16 +297,21 @@ architecture_premise: >
 unit_of_analysis:
   - relationship
   - relational_field
-foundation:
+constitutive_conditions:
   - Reciprocity
   - Embodiment
   - Non-Domination
+downstream_observation:
   - Emergence
+reference_equations:
+  relational_condition: RCD = R * E_d * N
+  qualified_emergence: E_qualified = RCD * E_raw
 layers:
   - Syzygy Rosetta
   - Coheronmetry
   - Orthogonal Signal
   - Trivian Resonance Lattice
+  - TRIA Diachronic Sovereignty
 implementation:
   canonical_sdk: https://github.com/TrivianInstitute/tria-sdk
 research_posture: falsifiable_and_open_to_revision
