@@ -1,0 +1,24 @@
+name: generative-differentiation
+
+on:
+  pull_request:
+    paths:
+      - "architecture/**"
+      - "verification/**"
+      - ".github/workflows/generative-differentiation.yml"
+  workflow_dispatch:
+
+jobs:
+  cross-stack-challenge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Prepare pinned component workspace
+        run: python verification/prepare_generative_workspace.py
+      - name: Run Generative Differentiation challenge suite
+        run: >-
+          python verification/generative_differentiation_challenge.py
+          --workspace generative-verification-workspace
