@@ -35,3 +35,56 @@ Python patch version and transitive dependencies are not fully locked.
 For the five repository suites, run `python -m pytest -q` inside each checkout.
 The historical baseline totals 311 repository tests. Invalid-input regressions
 belong to the newer Coheronmetry patch, not to these historical pins.
+
+---
+
+# Reproduce the post-propagation Generative Differentiation challenge
+
+The Generative Differentiation harness is a separate verification record. It
+preserves the historical September 5 baseline above and pins the six public
+repositories after the cross-stack Generative Differentiation propagation was
+merged, including the TRIA SDK.
+
+Prepare a fresh workspace and run the challenge:
+
+```bash
+python verification/prepare_generative_workspace.py
+python verification/generative_differentiation_challenge.py \
+  --workspace generative-verification-workspace
+```
+
+Exact revisions are recorded in `verification/generative_components.lock.json`.
+The harness refuses mismatched SHAs and dirty checkouts.
+
+The current challenge covers twelve cross-stack scenarios:
+
+1. clone ensemble -> crystallization risk;
+2. chaos swarm -> fragmentation risk;
+3. plural coordinated ensemble -> generative coherence;
+4. low-coherence / low-differentiation field -> collapse or stagnation risk;
+5. minority dissenter preserved through propagation;
+6. minority-signal extinction detection;
+7. provenance-erasure detection;
+8. dormancy with renewal/exit preserved as a legitimate state;
+9. optimization lock-in when alternatives become inaccessible;
+10. renewal restoring orthogonal reserve;
+11. SDK recording differentiation as an attributable OBSERVATION rather than a governance fact; and
+12. preservation of Rosetta's non-compensatory constitutive topology.
+
+Orthogonal Signal supplies the differentiation floor used by Coheronmetry in the
+classification scenarios. TRL separately verifies retention, provenance, and
+minority-signal preservation during propagation. Diachronic Sovereignty tests
+mode accessibility, lock-in, dormancy, and renewal. The SDK reproduces the
+quadrant classification and preserves the epistemic boundary in its claim
+ledger. Rosetta remains the normative/constitutive governance layer rather than
+being converted into a thirteenth invariant or a generativity score.
+
+The fixture thresholds are declared research parameters, not validated universal
+boundaries. Passing demonstrates that the pinned implementations conform to the
+encoded contract and to one another for these scenarios. It does not establish
+construct validity, causal validity, production safety, universal physics, or
+open-ended intelligence in live systems.
+
+`.github/workflows/generative-differentiation.yml` runs this challenge on
+relevant pull requests so later architecture or verification changes cannot
+silently break the pinned cross-stack contract.
