@@ -1,5 +1,6 @@
 import importlib.util
 from pathlib import Path
+import sys
 
 import pytest
 
@@ -8,6 +9,7 @@ MODULE_PATH = Path(__file__).parents[1] / "architecture" / "generative_different
 spec = importlib.util.spec_from_file_location("generative_differentiation", MODULE_PATH)
 module = importlib.util.module_from_spec(spec)
 assert spec.loader is not None
+sys.modules[spec.name] = module
 spec.loader.exec_module(module)
 
 DifferentiationState = module.DifferentiationState
