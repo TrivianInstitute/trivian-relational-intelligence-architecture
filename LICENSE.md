@@ -1,134 +1,72 @@
-# License
+# TRIA Licensing
 
-## TRIA — Trivian Relational Intelligence Architecture
+## Trivian Relational Intelligence Architecture
 
-Copyright © 2026 Sarasha Elion\. All rights reserved except as expressly granted below\.
+Copyright © 2026 Sarasha Elion. Published and stewarded by Trivian Institute.
 
-Published and stewarded by Trivian Institute\.
+Effective September 9, 2026, Sarasha Elion and Trivian Institute release the licensor-owned materials in the TRIA public architecture under an open-source / open-knowledge licensing model.
 
-## 1\. Public License for Research and Documentation
+## Software and executable code
 
-Unless a file, directory, or accompanying notice states otherwise, the documentation and research materials in this repository are licensed under the **Creative Commons Attribution\-NonCommercial\-ShareAlike 4\.0 International License &#40;CC BY\-NC\-SA 4\.0&#41;**\.
+Unless a specific file or third-party notice states otherwise, software, scripts, executable reference implementations, schemas used as software interfaces, and source code in this repository are licensed under the **Mozilla Public License Version 2.0 (MPL-2.0)**.
 
-- License summary: https://creativecommons\.org/licenses/by\-nc\-sa/4\.0/
-- Full legal code: https://creativecommons\.org/licenses/by\-nc\-sa/4\.0/legalcode
+Commercial use is permitted under MPL-2.0. Covered source files, including modifications to those covered files, remain governed by MPL-2.0 when distributed. Covered software may be combined with separately licensed larger works subject to MPL-2.0.
 
-The full Creative Commons legal code governs all materials released under CC BY\-NC\-SA 4\.0\. This file provides the applicable copyright notice, scope, attribution information, and commercial\-licensing pathway\.
+The complete legal text is included in [`LICENSE-MPL-2.0.txt`](LICENSE-MPL-2.0.txt).
 
-## 2\. Permissions
+SPDX-License-Identifier: MPL-2.0
 
-Subject to the terms of CC BY\-NC\-SA 4\.0, you may:
+## Documentation, specifications, diagrams, and research prose
 
-- copy and redistribute the covered materials in any medium or format for noncommercial purposes;
-- remix, transform, translate, and build upon the covered materials for noncommercial purposes;
-- use the covered materials in noncommercial research, scholarship, teaching, experimentation, evaluation, and public\-interest work; and
-- fork this repository and publish noncommercial adaptations under the same license\.
+Unless a specific file or third-party notice states otherwise, documentation, specifications, diagrams, research prose, educational text, and other non-software expressive materials in this repository are licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)**.
 
-These permissions are irrevocable provided that you comply with the applicable license terms\.
+Commercial reuse is permitted under CC BY-SA 4.0 subject to its attribution, indication-of-changes, and ShareAlike requirements.
 
-## 3\. Conditions
+License: https://creativecommons.org/licenses/by-sa/4.0/
+Legal code: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
-When sharing or adapting covered materials, you must:
+See [`LICENSE-DOCUMENTATION.md`](LICENSE-DOCUMENTATION.md).
 
-1. **Give attribution\.** Credit Sarasha Elion as the author and identify Trivian Institute as the publisher and research steward\.
-2. **Identify the source\.** Include the title of the material and a link to this repository or the specific source record\.
-3. **Link the license\.** State that the material is licensed under CC BY\-NC\-SA 4\.0 and provide a link to the license\.
-4. **Indicate changes\.** Clearly identify whether you modified, translated, excerpted, or adapted the material\.
-5. **Preserve ShareAlike terms\.** Distribute adaptations under CC BY\-NC\-SA 4\.0 or another license Creative Commons has formally designated as compatible\.
-6. **Avoid implied endorsement\.** Do not state or imply that Sarasha Elion, Trivian Institute, or any affiliated project endorses you, your organization, your adaptation, or your use without separate written permission\.
-7. **Apply no additional restrictions\.** Do not impose legal terms or technological measures that prevent others from exercising the rights granted by the license\.
+## Attribution and provenance
 
-## 4\. Recommended Attribution
-
-For the integrated architecture:
+Recommended attribution for the integrated architecture:
 
 ```text
 TRIA — Trivian Relational Intelligence Architecture
-© 2026 Sarasha Elion. Published by Trivian Institute.
-Licensed under CC BY-NC-SA 4.0.
+Author: Sarasha Elion
+Publisher and steward: Trivian Institute
 Source: https://github.com/TrivianInstitute/trivian-relational-intelligence-architecture
 ```
 
-For adaptations, add:
+When relying on a specific paper, DOI record, component repository, dataset, or implementation, cite that source separately under its applicable terms.
 
-```text
-Adapted from TRIA — Trivian Relational Intelligence Architecture by Sarasha Elion.
-Changes were made. This adaptation is licensed under CC BY-NC-SA 4.0.
-```
+For software, MPL-2.0 controls legal notice obligations. For documentation and research materials, CC BY-SA 4.0 controls attribution and ShareAlike obligations.
 
-When relying on a specific paper, DOI record, software repository, dataset, or implementation, cite that source separately under its applicable terms\.
+## Machine use
 
-## 5\. Commercial Use
+The public licenses are intended to permit computational use as well as human use, including indexing, parsing, retrieval, embedding, evaluation, analysis, implementation, and other uses permitted by the applicable license. Preserve machine-readable provenance and license metadata when redistributing covered materials.
 
-CC BY\-NC\-SA 4\.0 does not grant permission to use the covered materials for commercial purposes\.
+## Trademarks, certification, and endorsement
 
-Whether a particular use is noncommercial is determined under CC BY\-NC\-SA 4\.0 and the facts of that use\. The examples below identify uses for which a separate commercial license should be requested; they do not replace the license’s legal definition\.
+These licenses do not grant trademark, service-mark, logo, certification-mark, endorsement, or official-affiliation rights except as necessary for accurate attribution. Names, logos, official certification designations, and other brand identifiers of Sarasha Elion, Trivian Institute, TRIA, Trivian Field, Trivian Technologies, and related projects remain subject to applicable trademark and unfair-competition law.
 
-Commercial rights may be available under a separate written license from the copyright holder\. This may include use in or for:
+Use of open TRIA materials does not by itself imply endorsement, certification, conformance, or official affiliation with Trivian Institute.
 
-- revenue\-generating products or services;
-- paid platforms, subscriptions, consulting engagements, or training programs;
-- proprietary systems or commercial AI deployments;
-- enterprise implementations, integrations, or internal commercial operations;
-- commercial datasets, evaluations, derivative frameworks, or certification programs; and
-- other activity primarily intended for commercial advantage or monetary compensation\.
+## Prior releases and third-party material
 
-To request commercial licensing terms, contact:
+Earlier releases were distributed under different licenses, including CC BY-NC-SA 4.0 and PolyForm Noncommercial in component repositories. Those prior grants are not revoked. This repository revision documents the licenses under which the current licensor-owned materials are additionally distributed as of September 9, 2026.
 
-**Trivian Institute**
-[connect@trivianinstitute\.org](mailto:connect@trivianinstitute.org)
-https://trivianinstitute\.org
+Third-party quotations, images, datasets, code, and other materials remain governed by their own notices and licenses. Nothing in this file purports to relicense material for which the copyright holders do not possess the necessary rights.
 
-No commercial permission is granted by an inquiry, discussion, proposal, repository access, or contribution\. Commercial permission requires a separate written agreement authorized by the copyright holder\.
+## No warranty
 
-## 6\. Materials Not Covered by This Public License
-
-The CC BY\-NC\-SA 4\.0 license applies only to materials for which Sarasha Elion holds the necessary rights and that are released under this notice\. It does not automatically apply to:
-
-- executable software or source code carrying a separate software license;
-- datasets, model weights, schemas, or technical assets with separate terms;
-- third\-party quotations, images, trademarks, or other materials identified as belonging to others;
-- material used under fair use, another copyright exception, or a third\-party license;
-- names, logos, marks, trade dress, or other brand identifiers of Sarasha Elion, Trivian Institute, Trivian Technologies, the Trivian Field, TRIA, or related projects;
-- patent, trademark, privacy, publicity, confidentiality, or other rights not granted by CC BY\-NC\-SA 4\.0; or
-- component repositories that contain their own license files or notices\.
-
-When a specific file or component carries different terms, those specific terms control that file or component\.
-
-## 7\. Software and Future Technical Releases
-
-This repository currently serves as the umbrella research and documentation repository for TRIA\. If software, executable reference implementations, datasets, or other technical assets are added, they may be released under separate terms appropriate to those materials\.
-
-Do not assume that this documentation license grants permission to use separately licensed code, datasets, models, or technical implementations\.
-
-## 8\. Contributions
-
-Submitting an issue, comment, pull request, suggestion, or other contribution does not transfer ownership of TRIA or its pre\-existing materials\.
-
-Unless a separate written contributor agreement or contribution notice states otherwise, contributors retain ownership of their original contributions and agree that accepted contributions may be distributed as part of this repository under the license applicable to the material they modify\.
-
-Contributors are responsible for ensuring that they have the rights necessary to submit their contributions\.
-
-## 9\. No Warranty
-
-The materials are provided **as\-is** for research, evaluation, and development\. To the maximum extent permitted by applicable law, no warranties are given regarding accuracy, completeness, fitness for a particular purpose, noninfringement, safety, performance, research validity, or suitability for deployment\.
-
-Reference implementations, internal tests, conceptual models, simulations, and proposed metrics do not constitute independent empirical validation, professional advice, certification, or a guarantee of outcomes\.
-
-## 10\. Limitation of Liability
-
-To the maximum extent permitted by applicable law, Sarasha Elion, Trivian Institute, and contributors will not be liable for claims, damages, losses, liabilities, costs, or other consequences arising from use of the materials\.
-
-## 11\. Interpretation
-
-For materials released under CC BY\-NC\-SA 4\.0, the Creative Commons legal code controls if this explanatory notice conflicts with or incompletely summarizes that license\.
-
-Nothing in this file limits rights available under applicable copyright exceptions or limitations\. Nothing in this file transfers ownership of the covered materials to Trivian Institute or any repository user\.
+The materials are provided as-is, without warranty. Research propositions, tests, simulations, reference implementations, and proposed metrics do not constitute independent empirical validation, professional advice, certification, or a guarantee of outcomes.
 
 ---
 
-**Copyright holder:** Sarasha Elion
-**Publisher and research steward:** Trivian Institute
-**Public documentation license:** CC BY\-NC\-SA 4\.0
-**Commercial licensing:** Separate written agreement required
-**Contact:** [connect@trivianinstitute\.org](mailto:connect@trivianinstitute.org)
+**Author / copyright holder:** Sarasha Elion  
+**Publisher and steward:** Trivian Institute  
+**Software license:** MPL-2.0  
+**Documentation / research license:** CC BY-SA 4.0  
+**Effective open-source transition:** September 9, 2026  
+**Contact:** connect@trivianinstitute.org

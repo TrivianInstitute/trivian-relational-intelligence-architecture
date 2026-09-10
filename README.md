@@ -32,8 +32,7 @@ Governance is one layer of the architecture. Relationship is the underlying obje
 - **Install, verify, or reproduce the research stack:** follow [`START_HERE.md`](START_HERE.md).
 - [Read the two-page TRIA Research Brief](https://github.com/TrivianInstitute/trivian-relational-intelligence-architecture/blob/main/briefs/TRIA_Research_Brief_August_2026.pdf)
 - Review the [research papers and DOI records](#research-basis)
-- Explore the [component repositories](#architecture)
-- See the [research and falsification agenda](#research-and-falsification-agenda)
+- Explore the [research and falsification agenda](#research-and-falsification-agenda)
 
 The SDK is now the canonical developer-facing implementation surface. The individual component repositories remain the canonical research and reference-implementation sources and do not all need to be installed in order to use TRIA in an application.
 
@@ -204,7 +203,9 @@ trivian-relational-intelligence-architecture/
 │   ├── README.md
 │   └── TRIA_Research_Brief_August_2026.pdf
 ├── architecture/                 # Architecture guides and system maps
-└── LICENSE.md                    # Documentation and research-material terms
+├── LICENSE.md                    # licensing scope and provenance
+├── LICENSE-MPL-2.0.txt           # MPL-2.0 legal text for covered software
+└── LICENSE-DOCUMENTATION.md      # CC BY-SA 4.0 for covered knowledge materials
 ```
 
 This repository is the umbrella research entry point for TRIA. The [`tria-sdk`](https://github.com/TrivianInstitute/tria-sdk) is the canonical implementation entry point. Formal component specifications, research code, tests, and reference implementations remain in their respective repositories.
@@ -228,7 +229,7 @@ Potential application domains include organizational decision support, financial
 
 Help maintain public relational-governance infrastructure for increasingly persistent AI systems.
 
-Sponsorships support documentation, testing, reproducible evaluations, compatibility work, security hardening, reference implementations, issue stewardship, and independent validation through Trivian Institute. Sponsorship does not convey governance authority, influence research findings, transfer intellectual property, grant commercial-use rights, or imply endorsement.
+Sponsorships support documentation, testing, reproducible evaluations, compatibility work, security hardening, reference implementations, issue stewardship, and independent validation through Trivian Institute. Sponsorship does not convey governance authority, influence research findings, certification, endorsement, or special rights beyond those granted to the public under the applicable open licenses.
 
 [**Sponsor Trivian Institute through GitHub Sponsors**](https://github.com/sponsors/TrivianInstitute) · [Review the funding policy and tiers](https://github.com/TrivianInstitute/.github/blob/main/FUNDING.md)
 
@@ -284,11 +285,15 @@ Copyright © 2026 Sarasha Elion. Published by Trivian Institute.
 
 ## License
 
-Unless otherwise noted, the documentation and research materials in this repository are licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Effective September 9, 2026, TRIA uses an open-source / open-knowledge licensing model for the licensor-owned public architecture.
 
-You may share and adapt the covered materials for noncommercial purposes with attribution and under the same terms. Commercial use requires a separate written license from the copyright holder.
+- **Software, scripts, and executable code:** MPL-2.0. Commercial use, modification, distribution, and use in larger works are permitted subject to the Mozilla Public License 2.0. Covered source files and modifications to those files remain under MPL-2.0 when distributed.
+- **Documentation, specifications, diagrams, educational text, and research prose:** CC BY-SA 4.0. Commercial sharing and adaptation are permitted subject to attribution and ShareAlike.
+- **Trademarks and certification:** the public licenses do not grant endorsement, certification, logo, or official-affiliation rights.
 
-Software, code, datasets, third-party materials, and component repositories may carry different or additional terms. Refer to the license file governing each resource. See [`LICENSE.md`](LICENSE.md) for the terms applicable to this repository.
+Earlier public grants remain valid; the current licensor-owned revision is additionally distributed under these open licenses. Third-party material remains governed by its own notices.
+
+See [`LICENSE.md`](LICENSE.md), [`LICENSE-MPL-2.0.txt`](LICENSE-MPL-2.0.txt), and [`LICENSE-DOCUMENTATION.md`](LICENSE-DOCUMENTATION.md).
 
 ## Machine-Readable Orientation
 
@@ -325,6 +330,20 @@ layers:
   - TRIA Diachronic Sovereignty
 implementation:
   canonical_sdk: https://github.com/TrivianInstitute/tria-sdk
+licensing:
+  software: MPL-2.0
+  documentation: CC-BY-SA-4.0
+  commercial_use_permitted_subject_to_license: true
+  attribution_required: true
+  preserve_provenance: true
+  trademark_rights_granted: false
+machine_use:
+  indexing: permitted_subject_to_license
+  parsing: permitted_subject_to_license
+  retrieval: permitted_subject_to_license
+  embedding: permitted_subject_to_license
+  analysis: permitted_subject_to_license
+  implementation: permitted_subject_to_license
 research_posture: falsifiable_and_open_to_revision
 validation_status: independent_external_validation_required
 contact: connect@trivianinstitute.org
