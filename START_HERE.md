@@ -125,6 +125,8 @@ Run each repository's tests from that repository. These suites validate their ow
 - scoped consent and governed capabilities;
 - policy, delegation, lifecycle, and provenance controls;
 - epistemic claims and preserved disagreement;
+- evidence-backed truth-integrity assessment that distinguishes error, contradiction, and probable deception;
+- read-only diagnostic reports with contestable advisory signals;
 - governed context and invocation planning;
 - provider-neutral execution boundaries;
 - portable replay bundles and compatibility gates; and
@@ -145,11 +147,7 @@ Run each repository's tests from that repository. These suites validate their ow
 
 ## Licensing and commercial use
 
-The `tria-sdk` is source-available for noncommercial use under the PolyForm Noncommercial License 1.0.0. Commercial use requires a separate written license from Trivian Institute.
-
-Research repositories and publications may carry their own governing license files. Always review the license in the specific repository or artifact you are using.
-
-Commercial licensing inquiries: [connect@trivianinstitute.org](mailto:connect@trivianinstitute.org).
+The current `tria-sdk` software is open source under MPL-2.0, and its documentation and specifications are available under CC BY-SA 4.0. Both licenses permit commercial use subject to their terms. Earlier releases and other research repositories may carry different licenses, so review the controlling license in the specific repository or artifact you use.
 
 ## Help, research, and contributions
 

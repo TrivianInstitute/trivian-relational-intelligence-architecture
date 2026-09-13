@@ -36,6 +36,8 @@ Governance is one layer of the architecture. Relationship is the underlying obje
 
 The SDK is now the canonical developer-facing implementation surface. The individual component repositories remain the canonical research and reference-implementation sources and do not all need to be installed in order to use TRIA in an application.
 
+The SDK also exposes a public Truth-Integrity Protocol. It distinguishes uncertainty, error, contradiction, probable deception, and adversarial manipulation without treating contradiction alone as a lie or turning an assessment into automatic enforcement.
+
 ## The Problem
 
 An intelligent system can complete its task while the relationship among its participants degrades.
@@ -126,6 +128,7 @@ TRIA is designed as an additive layer that can instrument existing model, agent,
 |State                  |Agent, session, memory, or workflow state               |`RelationalState` alongside agent state                                                         |
 |Drift                  |Output, behavior, performance, or safety drift          |Relational drift between participants                                                           |
 |Governance             |Model policy, guardrails, permissions, application logic|Relational governance before and during interaction                                             |
+|Truth integrity        |Accuracy checks or undifferentiated trust scores         |Evidence-backed, claim-scoped assessment with error/deception separation and contestability     |
 |Difference             |Diversity, sampling, adversarial testing, ensembles     |Explicit constraint-origin and orthogonality analysis                                           |
 |Multi-agent scale      |Coordination and orchestration                          |Relational propagation, dissonance, entrainment, and repair                                     |
 |Exit                   |Session termination or orchestration logic              |Meaningful exit and dissolution as architectural conditions                                     |
@@ -153,6 +156,8 @@ These categories should not be collapsed. Internal tests demonstrate implementat
 |Trivian Resonance Lattice |Implemented modules                                                 |Integrated network experiments           |
 |TRIA Diachronic Sovereignty|Executable snapshot schema and semantic validation                  |Longitudinal continuity studies          |
 |TRIA SDK                  |Implementation-complete experimental alpha                           |Independent integrations and deployment testing|
+
+Truth-integrity support in the SDK is implemented as a deterministic, read-only public contract. Its outputs are advisory evidence, not proof of private intent, identity labels, or authorization to punish. The temporal governance and failure analysis for this lens are documented in [TRIA Diachronic Sovereignty](https://github.com/TrivianInstitute/tria-diachronic-sovereignty/blob/main/03-epistemic-sovereignty/TRUTH_INTEGRITY.md).
 
 On 2026-09-05, the five component repositories passed 311 repository tests plus 10,000 deterministic randomized cross-stack vectors and one legacy additive counterexample. These results establish agreement with the Rosetta 2.0 contract and exercise zero-collapse, non-compensation, monotonicity, bounded qualified emergence, and rejection of inconsistent diachronic snapshots. They do not establish construct validity, threshold validity, causal validity, or real-world benefit.
 
